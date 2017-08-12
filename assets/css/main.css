@@ -96,6 +96,10 @@ span.rv {
 .pb60 {
   padding-bottom: 60px; }
 
+.ph40 {
+  padding-left: 40px;
+  padding-right: 40px; }
+
 /** Nav Bar */
 .navbar-default {
   background: #fff;
@@ -126,9 +130,7 @@ span.rv {
 .welcome {
   height: calc(100vh - 100px);
   width: 100%;
-  color: #fff;
-  /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/bn_cover.jpg') center center */
-  /*background-size: auto, cover */ }
+  color: #fff; }
   .welcome img {
     margin-top: 64px; }
   .welcome h1 {
