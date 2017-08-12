@@ -6,8 +6,8 @@ $headingFont: 'Source Sans Pro', sans-serif
 
 /** Color Defs **/
 $white: #fff
-$lightWhite: #ccc
-$lightGray: #999
+$lightWhite: #ddd
+$lightGray: #aaa
 $gray: #808080
 $darkGray: #333
 $black: #000
@@ -137,11 +137,11 @@ span.rv
   background: transparent
 
 .welcome
-  height: 82vh
+  height: calc(100vh - 100px)
   width: 100%
   color: $white
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/bn_cover.jpg') center center
-  background-size: auto, cover
+  /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/bn_cover.jpg') center center*/
+  /*background-size: auto, cover */
   img
     margin-top: 64px
   h1
@@ -150,7 +150,6 @@ span.rv
 .cover
   height: 30vh
   width: 100%
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
   color: $white
   h3
     font-size: 24px
@@ -195,8 +194,19 @@ span.rv
     h5
       font-size: 16px
       font-weight: 300
+      color: $darkGray
     .mix
       margin-bottom: 16px
+
+.zoom
+  img
+    transition: all .2s ease-in-out
+
+.zoom:hover
+  img
+    transform: scale(1.05)
+  h5
+    color: $black
 
 .contact
   h5
@@ -208,7 +218,7 @@ footer
   font-size: 14px
   color: $lightWhite
   .copyright
-    font-size: 12px
+    font-size: 13px
     color: $lightGray
     padding-top: 8px
   h4

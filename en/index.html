@@ -20,7 +20,7 @@
 
 <body data-spy="scroll" data-offset="50">
 
-<nav id="nav" class="navbar main navbar-default navbar-fixed-top">
+<nav id="nav" class="navbar main navbar-default navbar-fixed-top transp">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -50,8 +50,8 @@
     <div class="container full-height">
         <div class="row full-height hbox flex-center">
             <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 text-center">
-                <img src="/assets/img/bn_icon.svg" width="96" height="96">
-                <h1>Your Ideas. Your Property. Your Rights.</h1>
+                <object id="bn-icon" type="image/svg+xml" data="/assets/img/bn_icon.svg"></object>
+                <h1 id="welcome-heading">Your Ideas. Your Property. Your Rights.</h1>
             </div>
         </div>
     </div>
@@ -60,18 +60,39 @@
 <section id="services" class="what pt10">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8 pb20">
+            <div class="col-xs-12 col-md-offset-2 col-md-8 pb20 transp">
                 <h2>The best protection for your ideas</h2>
                 <p>Our team of legal professionals has extensive experience in investigating, procuring, and enforcing intellectual property rights, as well as in licensing and other business transactions in which intellectual property and technology are key components. We offer our clients comprehensive and competent assistance with all aspects of intellectual property law and related fields. Areas of expertise include":"</p>
-                <ul>
-                    <li>patent law</li>
-                    <li>utility model law</li>
-                    <li>German employees' inventor act</li>
-                    <li>design law</li>
-                    <li>trademark law</li>
-                    <li>copyright law</li>
-                    <li>licensing law</li>
-                </ul>
+                <div class="row pb20">
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_patent.png" width="80" height="80">
+                        <h5>patent law</h5>
+                    </div>
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_utilitymodel.png" width="80" height="80">
+                        <h5>utility model law</h5>
+                    </div>
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_invention.png" width="80" height="80">
+                        <h5>German employees' inventor act</h5>
+                    </div>
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_designpattern.png" width="80" height="80">
+                        <h5>design law</h5>
+                    </div>
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_trademark.png" width="80" height="80">
+                        <h5>trademark law</h5>
+                    </div>
+                    <div class="col-xs-6 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_copyright.png" width="80" height="80">
+                        <h5>copyright law</h5>
+                    </div>
+                    <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4 text-center pt10">
+                        <img src="/assets/img/icon_license.png" width="80" height="80">
+                        <h5>licensing law</h5>
+                    </div>
+                </div>
                 <p>We offer strategic advice to our clients in the case of obtaining, protecting, and enforcing their intellectual property rights on a national, European or international level. We also offer advice in conflict situations with other holders of property rights.</p>
                 <p>Furthermore, we take care of intellectual property rights administration for our clients,  and, if desired, further management and analysis of intellectual property rights portfolios.</p>
             </div>
@@ -84,7 +105,6 @@
         <div class="row full-height hbox flex-center">
             <div class="col-xs-12 text-center">
                 <h3>Our experience covers all technical fields.</h3>
-                <img src="/assets/img/technical_icons.svg" height="64">
             </div>
         </div>
     </div>
@@ -94,6 +114,13 @@
                 <h2>Our Philosophy</h2>
                 <p>Beckord & Niedlich is a client-driven, full service law firm, covering all fields and aspects of intellectual property law. It is our goal to successfully represent our clients’ interests, achieving the best possible protection of their innovations – and doing so in a time- and cost-effective manner.</p>
                 <p>We take a comprehensive approach, providing our clients with extensive technical, legal and industry knowledge. Working together closely with our clients, we develop long-term strategies tailored to suit their individual needs, aiming, above all, to avoid or resolve conflicts that could develop into court cases.</p>
+                <p class="text-center">
+                    <img src="/assets/img/icon_pharma.png" width="64" height="64">
+                    <img src="/assets/img/icon_electro.png" width="64" height="64">
+                    <img src="/assets/img/icon_energy.png" width="64" height="64">
+                    <img src="/assets/img/icon_chemistry.png" width="64" height="64">
+                    <img src="/assets/img/icon_physics.png" width="64" height="64">
+                </p>
                 <p>One key tactic for avoiding or solving conflicts when negotiating with competitors is the timely staking of claims through means of strategic applications for a range of rights - property, design as well as trademark. Performing a prior art analysis that includes an in-depth competitor analysis can also help strengthen our clients´ legal position.</p>
                 <p>Should it become advisable or even inevitable to institute legal proceedings, we work closely with our clients to develop litigation strategies and servicesfor successful enforcement and defence of their intellectual property assets.</p>
             </div>
@@ -124,83 +151,104 @@
                 <button type="button" data-filter=".cat-t">Patent Professionals</button>
                 <button type="button" data-filter=".cat-c">Partners in Cooperation</button>
             </div>
-            <div class="col-xs-12 col-md-offset-2 col-md-8 pb20 members">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 pb20 members">
                 
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-p cat-a">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-p cat-a">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_kb.jpg" width="96"
-                             height="96">
-                        <h4>Dr. Klaus Beckord</h4>
-                        <h5>Patent Attorney<br>&nbsp;
+                        <a href="team/klaus-beckord/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_kb.jpg"
+                                 width="96" height="96">
+                            <h4>Dr. Klaus Beckord</h4>
+                            <h5>Patent Attorney<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-a">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-a">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_jh.jpg" width="96"
-                             height="96">
-                        <h4> Jochen Haust</h4>
-                        <h5>Patent Attorney<br>&nbsp;
+                        <a href="team/jochen-haust/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_jh.jpg"
+                                 width="96" height="96">
+                            <h4> Jochen Haust</h4>
+                            <h5>Patent Attorney<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-t">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-t">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_lk.jpg" width="96"
-                             height="96">
-                        <h4> Lars Kleemeier</h4>
-                        <h5>Patent Professional<br>&nbsp;
+                        <a href="team/lars-kleemeier/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_lk.jpg"
+                                 width="96" height="96">
+                            <h4> Lars Kleemeier</h4>
+                            <h5>Patent Professional<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-a">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-a">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_sk.jpg" width="96"
-                             height="96">
-                        <h4> Sigrid Käppeler</h4>
-                        <h5>European Patent Attorney<br>&nbsp;
+                        <a href="team/sigrid-kaeppeler/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_sk.jpg"
+                                 width="96" height="96">
+                            <h4> Sigrid Käppeler</h4>
+                            <h5>European Patent Attorney<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-a cat-c">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-a cat-c">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_kl.jpg" width="96"
-                             height="96">
-                        <h4>Dr. Klaus Latzel</h4>
-                        <h5>Patent Attorney<br>&nbsp;
-                            (Partner in Cooperation)</h5>
+                        <a href="team/klaus-latzel/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_kl.jpg"
+                                 width="96" height="96">
+                            <h4>Dr. Klaus Latzel</h4>
+                            <h5>Patent Attorney<br>&nbsp;
+                                (Partner in Cooperation)
+                            </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-t">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-t">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_em.jpg" width="96"
-                             height="96">
-                        <h4>Dr. Elisabeth Meyer</h4>
-                        <h5>Patent Professional<br>&nbsp;
+                        <a href="team/elisabeth-meyer/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_em.jpg"
+                                 width="96" height="96">
+                            <h4>Dr. Elisabeth Meyer</h4>
+                            <h5>Patent Professional<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
                 
-                <div class="col-xs-12 col-md-4 mix cat-p cat-a">
+                <div class="col-xs-12 col-sm-6 col-md-4 mix cat-p cat-a">
                     <div class="text-center">
-                        <img class="img-circle" src="/assets/img/team_tn.jpg" width="96"
-                             height="96">
-                        <h4> Thorsten Niedlich</h4>
-                        <h5>Patent Attorney<br>&nbsp;
+                        <a href="team/thorsten-niedlich/" class="zoom">
+                            <img class="img-circle" src="/assets/img/team_tn.jpg"
+                                 width="96" height="96">
+                            <h4> Thorsten Niedlich</h4>
+                            <h5>Patent Attorney<br>&nbsp;
+                                
                             </h5>
+                        </a>
                     </div>
                 </div>
                 
@@ -290,6 +338,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/assets/js/navbar.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/vivus.min.js"></script>
 <script src="/assets/js/parallax.min.js"></script>
 <script src="/assets/js/mixitup.min.js"></script>
 

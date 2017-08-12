@@ -124,11 +124,11 @@ span.rv {
   background: transparent; }
 
 .welcome {
-  height: 82vh;
+  height: calc(100vh - 100px);
   width: 100%;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/bn_cover.jpg") center center;
-  background-size: auto, cover; }
+  /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../img/bn_cover.jpg') center center */
+  /*background-size: auto, cover */ }
   .welcome img {
     margin-top: 64px; }
   .welcome h1 {
@@ -137,7 +137,6 @@ span.rv {
 .cover {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   color: #fff; }
   .cover h3 {
     font-size: 24px; }
@@ -174,9 +173,18 @@ span.rv {
   color: #ff4f0d; }
 .team .members h5 {
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #333; }
 .team .members .mix {
   margin-bottom: 16px; }
+
+.zoom img {
+  transition: all 0.2s ease-in-out; }
+
+.zoom:hover img {
+  transform: scale(1.05); }
+.zoom:hover h5 {
+  color: #000; }
 
 .contact h5 {
   font-size: 16px; }
@@ -185,18 +193,18 @@ footer {
   background: #333;
   box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  color: #ccc; }
+  color: #ddd; }
   footer .copyright {
-    font-size: 12px;
-    color: #999;
+    font-size: 13px;
+    color: #aaa;
     padding-top: 8px; }
   footer h4 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 300;
-    color: #ccc; }
+    color: #ddd; }
   footer a {
     display: block;
-    color: #999; }
+    color: #aaa; }
 
 /*# sourceMappingURL=main.css.map */
