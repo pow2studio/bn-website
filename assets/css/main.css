@@ -220,4 +220,11 @@ footer {
     display: block;
     color: #aaa; }
 
+@media (max-width: 767px) {
+  footer h4 {
+    margin-top: 32px;
+    font-size: 16px; }
+  footer a {
+    font-size: 16px; } }
+
 /*# sourceMappingURL=main.css.map */
