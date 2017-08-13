@@ -136,7 +136,10 @@ span.rv
 
 .navbar-default .navbar-nav > li > a:hover
   color: $red
-  border-bottom: 2px solid red
+
+@media (min-width: 768px)
+  .navbar-default .navbar-nav > li > a:hover
+    border-bottom: 2px solid red
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -222,6 +225,20 @@ span.rv
   h3
     color: $green
     font-size: 18px
+
+.person
+  .title
+    h2
+      color: $green
+      margin-bottom: 0
+    h3
+      color: $darkGray
+      font-weight: 300
+      margin-top: 4px
+    h4
+      color: $gray
+      margin-top: 32px
+      font-weight: 300
 
 footer
   background: $darkGray

@@ -122,9 +122,11 @@ span.rv {
   border-bottom: 2px solid white; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #ff4f0d;
-  border-bottom: 2px solid red; }
+  color: #ff4f0d; }
 
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a:hover {
+    border-bottom: 2px solid red; } }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -201,6 +203,18 @@ span.rv {
 .page h3 {
   color: #00aa88;
   font-size: 18px; }
+
+.person .title h2 {
+  color: #00aa88;
+  margin-bottom: 0; }
+.person .title h3 {
+  color: #333;
+  font-weight: 300;
+  margin-top: 4px; }
+.person .title h4 {
+  color: #808080;
+  margin-top: 32px;
+  font-weight: 300; }
 
 footer {
   background: #333;
