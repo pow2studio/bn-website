@@ -52,6 +52,9 @@ span.rv {
   unicode-bidi: bidi-override;
   direction: rtl; }
 
+.transp {
+  opacity: 0; }
+
 .full-height {
   height: 100%; }
 
@@ -186,6 +189,18 @@ span.rv {
 
 .contact h5 {
   font-size: 16px; }
+
+.page a {
+  color: #000;
+  border-bottom: 1px dotted #aaa; }
+.page a:hover {
+  color: #ff4f0d;
+  border-bottom: 1px solid #ff4f0d; }
+.page h2 {
+  color: #333; }
+.page h3 {
+  color: #00aa88;
+  font-size: 18px; }
 
 footer {
   background: #333;

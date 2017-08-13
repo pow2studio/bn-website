@@ -16,8 +16,10 @@ $(document).ready(function () {
       });
     });
     img.attr('src', imgUrl);
-  } else
+  } else {
     renderBg($w, imgUrl);
+    $('.transp').css({ opacity: 1 });
+  }
 
   function renderBg(el, imgUrl) {
     el.css('background', 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),' +
