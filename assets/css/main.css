@@ -81,7 +81,7 @@ span.rv {
 }
 
 .arrow {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -27px;
@@ -218,6 +218,7 @@ a.selected {
 /** Sections **/
 .sec-welcome {
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   color: #fff;
   background: url("/assets/img/bn_cover.jpg") no-repeat center center;
