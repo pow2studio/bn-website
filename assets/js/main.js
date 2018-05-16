@@ -30,23 +30,8 @@ $(document).ready(function () {
   }
 
   function initMembers() {
-    mixitup('.members', {
-      callbacks: {
-        onMixEnd: function () {
-          $(window).trigger('resize').trigger('scroll');
-        }
-      }
-    });
-  }
-
-  function initMembers() {
-    mixitup('.members', {
-      callbacks: {
-        onMixEnd: function () {
-          $(window).trigger('resize').trigger('scroll');
-        }
-      }
-    });
+    var mixer = mixitup('.members');
+    mixer.filter('.cat-a');
   }
 
   function renderBg(el, imgUrl) {

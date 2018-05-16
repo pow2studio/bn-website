@@ -28,7 +28,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col d-flex justify-content-between">
-                <img src="/assets/img/bn_logo.png" width="300" height="48" alt="Beckord & Niedlich">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/img/bn_logo.png" width="300" height="48" alt="Beckord & Niedlich">
+                </a>
                 <button class="nav-close"></button>
             </div>
         </div>
@@ -44,7 +46,7 @@
                 <div class="mt-5">
                     
                     <a class="lang selected" href="/de/">Deutsch</a>
-                    <a class="lang " href="/en/">English</a>        
+                    <a class="lang " href="/en/">English</a>
                 </div>
             </div>
         </div>
@@ -88,7 +90,11 @@
         <div class="row h-100 d-flex justify-content-center align-items-center">
             <div class="col-xs text-center claim">
                 <object id="bn-icon" type="image/svg+xml" data="/assets/img/bn_icon.svg"></object>
-                <h1 id="welcome-heading" class="text-center">Ihre Ideen. Ihr Eigentum. Ihr Recht.</h1>
+                <h1 id="welcome-heading" class="text-center">
+                    Ihre Ideen.<span class="sb"></span>
+                    Ihr Eigentum.<span class="sb"></span>
+                    Ihr Recht.
+                </h1>
             </div>
         </div>
     </div>
@@ -109,6 +115,7 @@
                 </div>
                 <p>Wir beraten unsere Mandanten strategisch, wenn es um die Erlangung, Verteidigung und Durchsetzung dieser Schutzrechte in Deutschland, in Europa oder auch in außereuropäischen Ländern geht. Ebenso unterstützen wir sie bei der Abwehr von Angriffen anderer Schutzrechtsinhaber.</p>
                 <p>Außerdem übernehmen wir die Verwaltung von Schutzrechten und auf Wunsch ein darüber hinausgehendes Management oder eine Analyse des Schutzrechtsportfolios.</p>
+                <p><a href="/de/ueber-uns/">Mehr über unsere Kanzlei &raquo;</a></p>
             </div>
         </div>
     </div>
@@ -188,6 +195,12 @@
     </div>
 </section>
 
+
+
+
+
+
+
 <span id="team" class="anchor"></span>
 <section class="sec-team team py-5">
     <div class="container">
@@ -195,20 +208,22 @@
             <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
                     <h2>Das Team</h2>
                 <p>Unsere Patentanwälte und wissenschaftlich ausgebildeten Mitarbeiter sind dank ihrer Ausbildung und Berufserfahrung in den verschiedensten technischen Bereichen zu Hause.</p>
+                <p><a href="/de/karriere/">Neugierig? Jetzt bewerben &raquo;</a></p>
             </div>
         </div>
         <div class="row">
             <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8 filter">
-                <button type="button" data-filter="all">Alle</button>
                 <button type="button" data-filter=".cat-p">Partner</button>
                 <button type="button" data-filter=".cat-a">Anwälte</button>
                 <button type="button" data-filter=".cat-t">Referenten</button>
                 <button type="button" data-filter=".cat-c">Kooperationspartner</button>
-                <button type="button" data-filter=".cat-b">Backoffice</button>
+                
+                <button type="button" data-filter="all">Alle</button>
             </div>
             <div class="offset-sm-1 col-sm-10 offset-xl-2 col-xl-8 pb-4 members">
                 <div class="row">
-                      
+                    
+                     
                     <div class="col-sm-6 col-md-4 mix cat-p cat-a">
                         <div class="text-center">
                             <a href="team/klaus-beckord/" class="zoom">
@@ -269,18 +284,6 @@
                         </div>
                     </div>
                      
-                    <div class="col-sm-6 col-md-4 mix cat-b">
-                        <div class="text-center">
-                            <a href="team/angela-merkel/" class="zoom">
-                                <img class="rounded-circle" src="/assets/img/team/am.jpg" width="96" height="96">
-                                <div class="name">Dr. Angela Merkel</div>
-                                <div class="role">Patenanwaltsfachangestellte
-                                    <br>&nbsp; 
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                     
                     <div class="col-sm-6 col-md-4 mix cat-t">
                         <div class="text-center">
                             <a href="team/elisabeth-meyer/" class="zoom">
@@ -325,7 +328,7 @@
         <div class="row">
             <div class="offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
                 <h2>Kontakt</h2>
-                <p>Falls Sie weiterführende Fragen haben oder unseren Service in Anspruch nehmen möchten, stehen wir Ihnen jederzeit gerne zur Verfügung. Kontaktieren Sie uns gerne in einer unserer Zweigstellen.</p>
+                <p>Falls Sie weiterführende Fragen haben oder unseren Service in Anspruch nehmen möchten, stehen wir Ihnen jederzeit gerne zur Verfügung:</p>
             </div>
         </div>
         <div class="row mt-3">
@@ -380,7 +383,6 @@
             <div class="col-sm-2">
                 <h4>Die Kanzlei</h4>
                 <a href="/de/ueber-uns/">Über uns</a>
-                <a href="/de/unsere-philosophie/">Philosophie</a>
                 <a href="/de/karriere/">Karriere</a>
             </div>
             <div class="offset-sm-2 col-sm-2">

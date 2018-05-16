@@ -30,12 +30,25 @@ $fullCoverHeight: 100vh;
 }
 
 a {
+    color: $black;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
     color: $red;
+}
+
+p > a {
+    border-bottom: 1px dotted $lightGray;
+}
+
+p > a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+a:focus {
+    outline: none;
 }
 
 img {
@@ -92,6 +105,16 @@ span.rv {
 
 .o0 {
     opacity: 0;
+}
+
+.sb {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sb {
+        display: block;
+    }
 }
 
 .anchor {
@@ -208,6 +231,27 @@ button.nav-close {
         color: $white;
     }
 }
+
+@media (max-width: 576px) {
+    button.nav-toggler {
+        right: 16px;
+    }
+    button.nav-close {
+        margin-right: -15px;
+    }
+    .mobile-nav {
+        margin-left: -15px;
+        padding-left: 0;
+    }
+    .navbar {
+        padding: 6px;
+    }
+    .navbar-brand > img {
+        width: 200px;
+        height: 32px;
+    }    
+}
+
 
 .dropdown-menu-right {
     right: 0;
