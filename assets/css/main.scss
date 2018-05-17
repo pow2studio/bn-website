@@ -86,6 +86,18 @@ h2 {
     margin-bottom: 24px;
 }
 
+@media(max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+}
+
 strong {
     font-weight: 600;
 }
@@ -173,7 +185,7 @@ button.nav-toggler:hover {
 
 button.nav-close {
     background: url("/assets/img/ic_nav_close.png") 0 0 / 25px 25px;
-    margin: 12px 8px 0 0;
+    margin-right: 8px;
 }
 
 .mobile-nav {
@@ -182,9 +194,13 @@ button.nav-close {
     width: 100%;
     height: 100%;
     top: 0;
-    padding: 8px 1px 24px 1px;
     background: rgba(255, 255, 255, 0.97);
     z-index: 10000;
+
+    .bar {
+        height: $navbarHeight;
+        padding: 0 1px;
+    }
 
     .nav-link {
         font-family: $headingFont;
@@ -201,6 +217,7 @@ button.nav-close {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     z-index: 100;
     justify-content: flex-start;
+    align-items: center;
 
     a.nav-link, a.btn {
         font-family: $headingFont;
@@ -233,25 +250,24 @@ button.nav-close {
 }
 
 @media (max-width: 576px) {
-    button.nav-toggler {
-        right: 16px;
-    }
-    button.nav-close {
-        margin-right: -15px;
-    }
-    .mobile-nav {
-        margin-left: -15px;
-        padding-left: 0;
+    .mobile-nav .container-fluid {
+        padding-left: 5px;
     }
     .navbar {
-        padding: 6px;
+        padding: 0 6px;
     }
+    .navbar-brand > img {
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
     .navbar-brand > img {
         width: 200px;
         height: 32px;
-    }    
+    }
 }
-
 
 .dropdown-menu-right {
     right: 0;
