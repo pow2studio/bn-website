@@ -425,7 +425,11 @@ a.selected {
   font-size: 18px;
 }
 
-.page img {
+.page h4 {
+  font-size: 16px;
+}
+
+.page img:not(.icon) {
   display: block;
   margin: 0 auto;
   max-width: 100%;
