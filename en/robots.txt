@@ -1,1 +1,1 @@
-Sitemap: http://beckord/en/sitemap.xml
+Sitemap: http://beckord/de/sitemap.xml
